@@ -67,7 +67,7 @@
 </div>
   <footer class="page-footer">
     <div style="margin-top:10px">
-      <a style="color: black" href="https://github.com/elzinga11/myminiaturemodels.git">GitHub</a>
+      <a style="color: black" href="https://github.com/elzinga11/my-miniature-models.git">GitHub</a>
     </div>
   </footer>
 </div>
