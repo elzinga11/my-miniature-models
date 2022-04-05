@@ -13,7 +13,7 @@
       </li>
     </ul>
   </div>
-  <div>
+    <div>
     <b-navbar toggleable="lg" type="light">
       <b-navbar-brand><router-link style="font-family: unset; font-weight: 400"  to="/"><img class="trademark" style="max-width: 225px; margin-top: 12px"
         src="/images/mmmlogo.png" /></router-link></b-navbar-brand>
@@ -28,22 +28,34 @@
        </b-collapse>
   </b-navbar>
   </div>
-  <router-link to="/shopping"><img style="top:42px" class="shoppingCart" src="/images/shoppingcart.png"/></router-link>
-  <hr>
-  <div style="overflow: scroll; max-height: 72vh;" class="about">
-    <div class="rounded-circle"
-      style="padding: 10px; float: left; margin-top: 30px; margin:auto; width: 100%; height: 100%;">
-      <img style="border-radius: 10%; width: 100%" src="/images/slcwithcloche.jpg" />
+    <router-link to="/shopping"><img style="top:42px" class="shoppingCart" src="/images/shoppingcart.png"/></router-link>
+
+  <!-- <div style="margin-top: -8px !important; margin-left: 15px; margin-right: 15px; padding-bottom: 15px !important" class="md-form mt-0">
+    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+  </div> -->
+  <p style="font-size:20px; padding-top: 5px; font-family:Didot;">~ Reviews ~</p>
+
+  <div style="overflow: scroll; max-height: 72vh; padding-left:30px; padding-right: 30px; padding-bottom: 100px;">
+    <img class="item" src="/images/slcwithcloche.jpg" />
+
+    <div style="text-align: left;"> 
+    <p>Ammon</p>
+    <p style="margin-top: -10px; font-size: 15px; padding-left: 10px;">I gifted one to my parents and they loved it! I got the one with the display case and it looks amazing, would buy again!</p>
+
+    <p>Matt</p>
+    <p style="margin-top: -10px; font-size: 15px; padding-left: 10px;">I wanted a few temples to hand out and these worked perfectly.</p>
+
+    <p>Carla</p>
+    <p style="margin-top: -10px; font-size: 15px;  padding-left: 10px;">I can't wait to see what the ones with lights look like. I've gotten a few of these as presents and they are always a hit!</p>
     </div>
-    <p class="rightBox fontSize" style="margin:auto; padding-top: 15px; font-family:Didot; padding-top: 20px; padding-right: 20px; padding-bottom: 30px;">
-      My Miniature Models is all about bringing the temple to your home. By engraving the date you or your loved one was sealed, it is the perfect way to remember and celebrate that perfect day. Feel free to send us a message with any questions!</p>
+
   </div>
 
-
-  <footer class="page-footer">
+    <footer class="page-footer">
     <div style="margin-top:10px">
       <a style="color: black" href="https://github.com/elzinga11/myminiaturemodels.git">GitHub</a>
     </div>
   </footer>
 </div>
+
 </template>
