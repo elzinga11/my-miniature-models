@@ -13,6 +13,9 @@
       <li>
         <a href='pages/reviews.html'><img src="images/instagram.png"></a>
       </li>
+        <p v-if="this.$root.$data.loggedIn" style="position: absolute; right: 0; margin: 10px; margin-right: 85px !important;">Welcome {{this.$root.$data.firstName}} {{this.$root.$data.lastName}}</p>
+        <router-link v-if="!this.$root.$data.loggedIn" style="position: absolute; right: 0; margin: 10px;" to="/login">Login</router-link>
+        <router-link v-if="this.$root.$data.loggedIn" style="position: absolute; right: 0; margin: 10px;" to="/login">Sign Out</router-link>
     </ul>
   </div>
   <div class="news">

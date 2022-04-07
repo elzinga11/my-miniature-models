@@ -4,6 +4,8 @@ import HomeView from '../views/HomeView.vue'
 import ShoppingView from '../views/ShoppingView.vue'
 import ProductsView from '../views/ProductsView.vue'
 import ReviewsView from '../views/ReviewsView.vue'
+import LoginView from '../views/LoginView.vue'
+
 
 Vue.use(VueRouter)
 
@@ -28,14 +30,19 @@ const routes = [
   },
   {
     path: '/products',
-    name: 'shopping',
+    name: 'products',
     component: ProductsView 
   },
   {
     path: '/reviews',
-    name: 'shopping',
+    name: 'reviews',
     component: ReviewsView 
   },
+  {
+  path: '/login',
+  name: 'login',
+  component: LoginView
+  }
 ]
 
 const router = new VueRouter({

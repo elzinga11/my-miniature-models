@@ -12,11 +12,17 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
 let data = {
+  firstName: "",
+  lastName: "",
+  username: "",
+  loggedIn: Boolean,
   temples: temples,
   cart: []
 }
 console.log(data)
 console.log(temples)
+
+data.loggedIn = false;
 
 new Vue({
   router,
