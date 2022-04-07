@@ -104,6 +104,7 @@
           lastName: this.lastName
         });
         this.getUsers();
+        this.login();
       } catch (error) {
         console.log(error);
       }
@@ -126,6 +127,9 @@
         if(this.$root.$data.loggedIn === false){
           this.$root.$data.loggedIn = true;
           this.loginSucceeded = false;
+          setTimeout(() => {
+            this.$root.$data.loggedIn = false;
+          }, 1000)
         }
       } catch (error) {
         console.log(error);
