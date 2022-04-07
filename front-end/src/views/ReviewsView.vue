@@ -48,10 +48,11 @@
     </div>
     <div v-for="review of reviews" style="text-align: left;" :key="review._id">
       <div style="display: flex">
-        <p>{{review.name}}</p>
+        <p style="padding-right: 5px; font-size: 18px">{{review.name}}</p>
         <button @click="deleteReview(review)" style="margin-left:auto; margin-bottom: 10px;" v-if="review.associatedUsername === username">Delete</button>
       </div>
       <p style="margin-top: -10px; font-size: 15px; padding-left: 10px;">{{review.description}}</p>
+      <p style="margin-top: -10px; font-size: 15px; padding-left: 10px;">-{{review.date}}</p>
     <!-- <p>Ammon</p>
     <p style="margin-top: -10px; font-size: 15px; padding-left: 10px;">I gifted one to my parents and they loved it! I got the one with the display case and it looks amazing, would buy again!</p>
 
