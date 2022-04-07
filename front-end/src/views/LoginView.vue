@@ -103,8 +103,13 @@
           firstName: this.firstName,
           lastName: this.lastName
         });
+        this.loginSucceeded = true;
+        this.$root.$data.loggedIn = true;
+        this.$root.$data.loggedIn = true;
+        this.$root.$data.firstName = this.firstName;
+        this.$root.$data.lastName = this.lastName;
+        this.$root.$data.username = this.username;
         this.getUsers();
-        this.login();
       } catch (error) {
         console.log(error);
       }
